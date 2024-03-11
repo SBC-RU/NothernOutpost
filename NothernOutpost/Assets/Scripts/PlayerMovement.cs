@@ -6,9 +6,9 @@ public class PlayerMovement : MonoBehaviour
 {
     public CharacterController controller;
 
-    public float speed = 12f;
+    public static float speed = 12f;
     public float gravity = -9.81f; //коэфициент гравитации
-    public float jumpHeight = 3f;
+    public static float jumpHeight = 1.25f;
     public Transform groundCheck;
     public float groundDistance=0.4f;
     public LayerMask groundMask;
@@ -23,6 +23,14 @@ public class PlayerMovement : MonoBehaviour
         {
             velocity.y = -3f;
         }
+        if (velocity.y < -12 && velocity.y >= -16)
+        {
+            HealthBar.fill -= 0.01f;
+        }
+        if (velocity.y < -16)
+        {
+            HealthBar.fill -= 0.01f;
+        }
         float x = Input.GetAxis("Horizontal");
         float z = Input.GetAxis("Vertical");
         Vector3 move = transform.right * x + transform.forward * z;
@@ -33,6 +41,7 @@ public class PlayerMovement : MonoBehaviour
             velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
         }
         velocity.y += gravity * Time.deltaTime;
+
         controller.Move(velocity * Time.deltaTime);
     }
 }
