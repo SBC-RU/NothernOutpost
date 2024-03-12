@@ -6,35 +6,36 @@ using TMPro;
 public class HealthBar : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI message;
-    public bool dead = false;
+    public bool dead = false; //хранит информацию о смерти
     public Image value_HP;
     public static float fill; //остаток здоровья
 
 
-    // Start is called before the first frame update
+    
     void Start()
     {
-        fill = 1f;
+        fill = 1f; //значение здоровья по умолчанию 100%
     }
-    public void textMessage()
+    public void textMessage() //текст предупреждение
     {
         message.text = "ВЫ ПОГИБЛИ";
     }
-    // Update is called once per frame
+
     void Update()
     {
-        if (fill > 0f)
+        if (fill > 0f) //если здоровье > 0, то оно может быть уменьшено
         {
             //fill -= Time.deltaTime * 0.1f; //здоровье отнимается
         }
-        if (fill <= 0f)
+        if (fill <= 0f) //если здоровье <= 0 то герой погиб
         {
             fill = 0f;
             dead = true;
         }
-        if (dead)
+        if (dead) //если герой мертв, здоровье 0, вывод текста о смерти, скорость перемещения = 0, прыжок = 0, вращение камеры 0
         {
             fill = 0f;
+            EnduranceBar.fill = 0f;
             textMessage();
             PlayerMovement.speed = 0f;
             PlayerMovement.jumpHeight = 0f;
@@ -42,7 +43,7 @@ public class HealthBar : MonoBehaviour
         }
         
 
-        if (fill > 1f)
+        if (fill > 1f) //если здоровье > 100%, оно соответствует 100%
         {
             fill = 1f;
         }
