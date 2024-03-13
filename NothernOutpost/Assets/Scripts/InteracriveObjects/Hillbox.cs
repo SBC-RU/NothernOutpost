@@ -5,7 +5,7 @@ using UnityEngine;
 public class Hillbox : MonoBehaviour, Interactable
 {
     public Sprite icons;
-    public GameObject interactionIcon;
+    //public GameObject interactionIcon;
     public bool isOn;
     void Start()
     {
