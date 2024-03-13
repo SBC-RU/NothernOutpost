@@ -105,7 +105,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61a452b8e0abdca47a6dc9243c086968, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mouseSensitivity: 100
   playerBody: {fileID: 1184823060275608468}
 --- !u!1 &6046823195313532039
 GameObject:
@@ -201,6 +200,7 @@ GameObject:
   - component: {fileID: 1184823060275608468}
   - component: {fileID: 2841160952926365533}
   - component: {fileID: 9095906223372895564}
+  - component: {fileID: 8860005168976304010}
   m_Layer: 0
   m_Name: First Person Player
   m_TagString: Untagged
@@ -265,14 +265,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 2841160952926365533}
-  speed: 12
   gravity: -14
-  jumpHeight: 2
   groundCheck: {fileID: 2798466535193327352}
   groundDistance: 0.4
   groundMask:
     serializedVersion: 2
     m_Bits: 8
+--- !u!114 &8860005168976304010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6609072622981352350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c79c41823e7bb9a478c248f3cee74ff5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainCam: {fileID: 5420262087013677058}
+  interactionDistance: 10
+  interactionUI: {fileID: 0}
+  interactionText: {fileID: 0}
 --- !u!1 &8448889085210363663
 GameObject:
   m_ObjectHideFlags: 0
