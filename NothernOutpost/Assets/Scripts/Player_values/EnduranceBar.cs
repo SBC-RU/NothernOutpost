@@ -18,7 +18,7 @@ public class EnduranceBar : MonoBehaviour
     }
     public void textMessage() //текст предупреждение
     {
-        message.text = "НЕОБХОДИМО ОТДОХНУТЬ";
+        //message.text = "НЕОБХОДИМО ОТДОХНУТЬ";
     }
 
     void Update()
@@ -54,7 +54,7 @@ public class EnduranceBar : MonoBehaviour
             accuracy = 0.65f; //коэф точности 0.65
             impactforce = 0.4f; //коэф силы удара 0.4
             PlayerMovement.speed = 10f; //скорость 10
-            textMessage();
+            //textMessage();
         }
 
         value_EU.fillAmount = fill;

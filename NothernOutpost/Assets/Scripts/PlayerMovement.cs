@@ -18,19 +18,13 @@ public class PlayerMovement : MonoBehaviour
     Vector3 velocity;
     bool isGrounded; //хранит значение коснулся земли или нет
     bool isGroundedRad;
+    public float timeSinceHit;
+    void Start()
+    {
+        timeSinceHit = 0f;
+    }
 
-    void hilldown()
-    {
-        HealthBar.fill -= Time.deltaTime * 0.5f;
-    }
-    void hilldown_radiation()
-    {
-        HealthBar.fill -= Time.deltaTime * 0.1f;
-    }
-    void hilldown_radiationProtect()
-    {
-        HealthBar.fill -= Time.deltaTime * 0.001f;
-    }
+
 
     // Update is called once per frame
     void FixedUpdate()
@@ -43,11 +37,19 @@ public class PlayerMovement : MonoBehaviour
         }
         if (velocity.y < -12 && velocity.y >= -16)
         {
-            Invoke("hilldown", 1);
+            if (Time.time - timeSinceHit >= 1)
+            {
+                HealthBar.fill -= 0.1f;
+                timeSinceHit = Time.time;
+            }
         }
         if (velocity.y < -16)
         {
-            Invoke("hilldown", 1);
+            if (Time.time - timeSinceHit >= 1)
+            {
+                HealthBar.fill -= 0.5f;
+                timeSinceHit = Time.time;
+            }
         }
         if (isGroundedRad)
         {
@@ -56,12 +58,22 @@ public class PlayerMovement : MonoBehaviour
             if (Protection.fill < 0.25f)
             {
                 message.text = "<color=yellow>ПОКИНЬТЕ ОПАСНУЮ ЗОНУ</color>";
-                Invoke("hilldown_radiation", 5);
+                if (Time.time - timeSinceHit >= 1)
+                {
+                    HealthBar.fill -= 0.05f;
+                    timeSinceHit = Time.time;
+                }
+                
+
             }
             else 
             {
                 message.text = "<color=green>ЗАЩИТА ДЕЙСТВУЕТ ОГРАНИЧЕННОЕ ВРЕМЯ</color>";
-                Invoke("hilldown_radiationProtect", 30);
+                if (Time.time - timeSinceHit >= 10)
+                {
+                    HealthBar.fill -= 0.05f;
+                    timeSinceHit = Time.time;
+                }
             }
         }
         if (!isGroundedRad)

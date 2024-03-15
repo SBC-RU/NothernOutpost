@@ -6,7 +6,7 @@ using TMPro;
 public class HealthBar : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI message;
-    public bool dead = false; //хранит информацию о смерти
+    public static bool dead = false; //хранит информацию о смерти
     public Image value_HP;
     public static float fill; //остаток здоровья
 
@@ -18,7 +18,7 @@ public class HealthBar : MonoBehaviour
     }
     public void textMessage() //текст предупреждение
     {
-        message.text = "ВЫ ПОГИБЛИ";
+        //message.text = "ВЫ ПОГИБЛИ";
     }
 
     void Update()
@@ -36,7 +36,7 @@ public class HealthBar : MonoBehaviour
         {
             fill = 0f;
             EnduranceBar.fill = 0f;
-            textMessage();
+            //textMessage();
             PlayerMovement.speed = 0f;
             PlayerMovement.jumpHeight = 0f;
             MouseLook.mouseSensitivity = 0f;
