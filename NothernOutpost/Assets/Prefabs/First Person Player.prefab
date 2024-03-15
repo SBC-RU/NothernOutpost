@@ -265,12 +265,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 2841160952926365533}
+  message: {fileID: 0}
   gravity: -14
   groundCheck: {fileID: 2798466535193327352}
   groundDistance: 0.4
   groundMask:
     serializedVersion: 2
     m_Bits: 8
+  groundMaskRad:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!114 &8860005168976304010
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -287,6 +291,7 @@ MonoBehaviour:
   interactionDistance: 10
   interactionUI: {fileID: 0}
   interactionText: {fileID: 0}
+  interactionIcon: {fileID: 0}
 --- !u!1 &8448889085210363663
 GameObject:
   m_ObjectHideFlags: 0
