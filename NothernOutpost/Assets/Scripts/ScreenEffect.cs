@@ -22,9 +22,18 @@ public class ScreenEffect : MonoBehaviour
             }
 
         }
+        if (HealthBar.fill >= 0.3f)
+        {
+            deadImage.SetActive(false);
+        }
         if (EnduranceBar.fill < 0.3f && !HealthBar.dead)
         {
             AttantionText.text = "<color=yellow>менаундхлн нрднумсрэ</color>";
+
+        }
+        if (EnduranceBar.fill >= 0.3f && !HealthBar.dead)
+        {
+            AttantionText.text = " ";
 
         }
         if (Protection.gas_mask)

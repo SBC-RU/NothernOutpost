@@ -19,12 +19,12 @@ public class Protection : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.G) && fill == 0.1f)
+        if ((Input.GetKeyDown(KeyCode.G) || Input.GetKeyDown(KeyCode.Alpha4)) && fill == 0.1f)
         {
             gas_mask = true;
 
         }
-        if (Input.GetKeyDown(KeyCode.G) && fill == 0.25f)
+        if ((Input.GetKeyDown(KeyCode.G) || Input.GetKeyDown(KeyCode.Alpha4)) && fill == 0.25f)
         {
             gas_mask = false;
 

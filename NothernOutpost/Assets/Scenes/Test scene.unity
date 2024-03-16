@@ -1454,6 +1454,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 63097f45f055afe4c96e25a5bb8252b2, type: 3}
+--- !u!20 &6570986012796008603 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 8373210316136802225, guid: 7b46389ece5d82549b5b53b1b3eac7f6, type: 3}
+  m_PrefabInstance: {fileID: 6872299255679924285}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6872299255679924285
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1465,6 +1470,18 @@ PrefabInstance:
     - target: {fileID: 870947367480128537, guid: 7b46389ece5d82549b5b53b1b3eac7f6, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1341412125715371406, guid: 7b46389ece5d82549b5b53b1b3eac7f6, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 6570986012796008603}
+    - target: {fileID: 1341412125715371406, guid: 7b46389ece5d82549b5b53b1b3eac7f6, type: 3}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1341412125715371406, guid: 7b46389ece5d82549b5b53b1b3eac7f6, type: 3}
+      propertyPath: m_PlaneDistance
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5078395729618751726, guid: 7b46389ece5d82549b5b53b1b3eac7f6, type: 3}
       propertyPath: m_Name
@@ -1517,6 +1534,18 @@ PrefabInstance:
     - target: {fileID: 7808189068223751618, guid: 7b46389ece5d82549b5b53b1b3eac7f6, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9089650624497838502, guid: 7b46389ece5d82549b5b53b1b3eac7f6, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 6570986012796008603}
+    - target: {fileID: 9089650624497838502, guid: 7b46389ece5d82549b5b53b1b3eac7f6, type: 3}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9089650624497838502, guid: 7b46389ece5d82549b5b53b1b3eac7f6, type: 3}
+      propertyPath: m_PlaneDistance
+      value: 0.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
