@@ -31,8 +31,11 @@ public class Teapot : MonoBehaviour, Interactable
     }
     public void Interact() //профит от использования (и судьба объекта)
     {
-
-        EnduranceBar.fill += 0.2f;
-        Destroy(gameObject);
+        if (Backpack.tea < 4)
+        {
+            Backpack.tea += 1;
+            Destroy(gameObject);
+        }
+        //EnduranceBar.fill += 0.2f;
     }
 }

@@ -13,7 +13,7 @@ public class Fishpot : MonoBehaviour, Interactable
     {
         if (isOn)
         {
-            return "<color=yellow>Съесть [E]</color>";
+            return "<color=yellow>Поднять [E]</color>";
 
         }
         return null;
@@ -31,8 +31,11 @@ public class Fishpot : MonoBehaviour, Interactable
     }
     public void Interact() //профит от использования (и судьба объекта)
     {
-
-        EnduranceBar.fill += 0.5f;
-        Destroy(gameObject);
+        if (Backpack.fishpot < 4)
+        {
+            Backpack.fishpot += 1;
+            Destroy(gameObject);
+        }
+        //EnduranceBar.fill += 0.5f;
     }
 }

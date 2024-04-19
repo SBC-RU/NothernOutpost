@@ -31,8 +31,11 @@ public class Milkpot : MonoBehaviour, Interactable
     }
     public void Interact() //профит от использования (и судьба объекта)
     {
-
-        HealthBar.fill += 0.25f;
-        Destroy(gameObject);
+        if (Backpack.milkpot < 4)
+        {
+            Backpack.milkpot += 1;
+            Destroy(gameObject);
+        }
+        //HealthBar.fill += 0.25f;
     }
 }

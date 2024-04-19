@@ -18,6 +18,22 @@ public class PlayerInteraction : MonoBehaviour
     void Update()
     {
         InteractionRay();
+
+        if ((Input.GetKeyDown(KeyCode.F1)) && Backpack.tea > 0)
+        {
+            EnduranceBar.fill += 0.2f;
+            Backpack.tea -= 1;
+        }
+        if ((Input.GetKeyDown(KeyCode.F2)) && Backpack.milkpot > 0)
+        {
+            HealthBar.fill += 0.25f;
+            Backpack.milkpot -= 1;
+        }
+        if ((Input.GetKeyDown(KeyCode.F3)) && Backpack.fishpot > 0)
+        {
+            EnduranceBar.fill += 0.5f;
+            Backpack.fishpot -= 1;
+        }
     }
     void InteractionRay()
     {
