@@ -145,7 +145,6 @@ GameObject:
   - component: {fileID: 7311279340853395722}
   - component: {fileID: 9070884720386035011}
   - component: {fileID: 2813300905962090494}
-  - component: {fileID: 5480368325595297425}
   m_Layer: 5
   m_Name: backpack
   m_TagString: Untagged
@@ -214,24 +213,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &5480368325595297425
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1384427642463441201}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f361ec62b6df0ac4181b10a7a7527475, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tea_cup: {fileID: 8366990947274552389}
-  ScoreTeaText: {fileID: 7611045575585722953}
-  milk_pot: {fileID: 7107028610578526385}
-  ScoreMilkText: {fileID: 2658434155322789771}
-  fish_pot: {fileID: 1598449830148270326}
-  ScoreFishText: {fileID: 3124065854334511160}
 --- !u!1 &1389588717064250355
 GameObject:
   m_ObjectHideFlags: 0
@@ -3098,6 +3079,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8128288418018885046, guid: 6cd80d1e0b67f2240959c13844a04482, type: 3}
       insertIndex: -1
       addedObject: {fileID: 918016792000503481}
+    - targetCorrespondingSourceObject: {fileID: 8128288418018885046, guid: 6cd80d1e0b67f2240959c13844a04482, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5296772225869602299}
     - targetCorrespondingSourceObject: {fileID: 6774108574225914180, guid: 6cd80d1e0b67f2240959c13844a04482, type: 3}
       insertIndex: -1
       addedObject: {fileID: 506567361894756056}
@@ -3161,6 +3145,24 @@ MonoBehaviour:
   slot2Image: {fileID: 3067455397635824288}
   slot3Image: {fileID: 4083079509416818509}
   GameIsPaused: 0
+--- !u!114 &5296772225869602299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1165766784135088529}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f361ec62b6df0ac4181b10a7a7527475, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tea_cup: {fileID: 8366990947274552389}
+  ScoreTeaText: {fileID: 7611045575585722953}
+  milk_pot: {fileID: 7107028610578526385}
+  ScoreMilkText: {fileID: 2658434155322789771}
+  fish_pot: {fileID: 1598449830148270326}
+  ScoreFishText: {fileID: 3124065854334511160}
 --- !u!224 &2482327080642958449 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4796939045004632150, guid: 6cd80d1e0b67f2240959c13844a04482, type: 3}
