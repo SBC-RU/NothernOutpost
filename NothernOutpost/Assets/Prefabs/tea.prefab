@@ -64,6 +64,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: tea
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e024755514153b2449452cdcdeb8d5c3, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -122,7 +126,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9449dbaa8d5c556478007f535041b341, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  icons: {fileID: 0}
+  icons: {fileID: 21300000, guid: 66cafea8454b7564490b15e7bd0fb078, type: 3}
   isOn: 1
 --- !u!65 &-8895200825788864399
 BoxCollider:

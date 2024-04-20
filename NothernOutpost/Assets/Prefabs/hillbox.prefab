@@ -64,6 +64,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: hillbox
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 36147816a4b558546be37bd54765f6e9, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -143,5 +147,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c2974b51230d7e468b0be0039d5aae8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  icons: {fileID: 0}
+  icons: {fileID: 21300000, guid: 7c18ca22ad92a73439ea1aea6b6c4a16, type: 3}
   isOn: 1

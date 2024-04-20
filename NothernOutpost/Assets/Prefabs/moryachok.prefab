@@ -64,6 +64,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: moryachok
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2c39f78ccf93c52448d8e14d6f36edd6, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -143,5 +147,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ba7a9733cea9e1448a5f4fdf0c0bd70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  icons: {fileID: 0}
+  icons: {fileID: 21300000, guid: 466312b41c55d11448941ab7dfe76392, type: 3}
   isOn: 1

@@ -126,7 +126,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a3f548dddf5a274aac30ed2ee14f783, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  icons: {fileID: 0}
+  icons: {fileID: 21300000, guid: 739fc0a66380c954cad6ff57016d752f, type: 3}
   isOn: 1
 --- !u!65 &5432377922082128843
 BoxCollider:
