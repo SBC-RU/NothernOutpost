@@ -18,7 +18,7 @@ public class PlayerInteraction : MonoBehaviour
     void Update()
     {
         InteractionRay();
-
+        //профит от еды и аптечек (кнопки быстрого доступа)
         if ((Input.GetKeyDown(KeyCode.F1)) && Backpack.tea > 0)
         {
             EnduranceBar.fill += 0.2f;
@@ -33,6 +33,11 @@ public class PlayerInteraction : MonoBehaviour
         {
             EnduranceBar.fill += 0.5f;
             Backpack.fishpot -= 1;
+        }
+        if ((Input.GetKeyDown(KeyCode.F4)) && Backpack.medkit > 0 && HealthBar.fill < 0.94f)
+        {
+            HealthBar.fill += 0.7f;
+            Backpack.medkit -= 1;
         }
     }
     void InteractionRay()

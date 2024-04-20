@@ -13,7 +13,7 @@ public class Teapot : MonoBehaviour, Interactable
     {
         if (isOn)
         {
-            return "<color=yellow>Выпить [E]</color>";
+            return "<color=yellow>Поднять [E]</color>";
 
         }
         return null;

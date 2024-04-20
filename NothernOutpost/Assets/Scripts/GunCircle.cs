@@ -12,11 +12,13 @@ public class GunCircle : MonoBehaviour
     public GameObject slot2Image;
     public GameObject slot3Image;
 
+    public static int armor;
+
     public bool GameIsPaused = false;
     // Start is called before the first frame update
     void Start()
     {
-        
+        armor = 0;
     }
 
     // Update is called once per frame
@@ -36,7 +38,15 @@ public class GunCircle : MonoBehaviour
                 Pause();
             }
         }
-       
+        if (armor == 0)
+        {
+            gas_maskImage.SetActive(false);
+        }
+        if (armor == 1)
+        {
+            gas_maskImage.SetActive(true);
+        }
+
     }
     public void Button_back()
     {

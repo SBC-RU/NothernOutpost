@@ -15,12 +15,16 @@ public class Backpack : MonoBehaviour
     public GameObject fish_pot;
     public static int fishpot;
     public TextMeshProUGUI ScoreFishText;
+    public GameObject med_kit;
+    public static int medkit;
+    public TextMeshProUGUI ScoreMedkitText;
     // Start is called before the first frame update
     void Start()
     {
         tea = 0;
         milkpot = 0;
         fishpot = 0;
+        medkit = 0;
     }
 
     // Update is called once per frame
@@ -56,6 +60,17 @@ public class Backpack : MonoBehaviour
         if (fishpot == 0)
         {
              fish_pot.SetActive(false);
+        }
+
+
+        if (medkit > 0)
+        {
+            med_kit.SetActive(true);
+            ScoreMedkitText.text = "x" + medkit.ToString();
+        }
+        if (medkit == 0)
+        {
+            med_kit.SetActive(false);
         }
     }
 }

@@ -19,7 +19,7 @@ public class Protection : MonoBehaviour
 
     void Update()
     {
-        if ((Input.GetKeyDown(KeyCode.G) || Input.GetKeyDown(KeyCode.Alpha4)) && fill == 0.1f)
+        if ((Input.GetKeyDown(KeyCode.G) || Input.GetKeyDown(KeyCode.Alpha4)) && fill == 0.1f && GunCircle.armor >= 1)
         {
             gas_mask = true;
 

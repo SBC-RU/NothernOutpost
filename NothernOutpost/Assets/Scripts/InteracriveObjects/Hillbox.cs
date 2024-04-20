@@ -20,7 +20,7 @@ public class Hillbox : MonoBehaviour, Interactable
     {
         if (isOn) 
         {
-            return "<color=yellow>Использовать [E]</color>";
+            return "<color=yellow>Поднять [E]</color>";
             
         }
         return null;
@@ -38,8 +38,16 @@ public class Hillbox : MonoBehaviour, Interactable
     }
     public void Interact()
     {
-
-        HealthBar.fill += 0.7f;
-        Destroy(gameObject);
+        if (Backpack.medkit < 4 && HealthBar.fill > 0.45f)
+        {
+            Backpack.medkit += 1;
+            Destroy(gameObject);
+        }
+        if (HealthBar.fill <= 0.45f)
+        {
+            HealthBar.fill += 0.7f;
+            Destroy(gameObject);
+        }
+        //HealthBar.fill += 0.7f;
     }
 }
