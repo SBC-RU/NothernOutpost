@@ -22,7 +22,7 @@ public class PauseMenu : MonoBehaviour
             Debug.Log("Escape");
             if (GameIsPaused)
             {
-                Debug.Log("1242345346456");
+                
                 
                 Button_back();
             }
@@ -51,7 +51,7 @@ public class PauseMenu : MonoBehaviour
     {
         int i = Random.Range(0, tips.Length-1);
         Debug.Log(tips[i].Ru);
-        //comments_txt.text = "25345634t6345";
+
         if (Comment) 
         {
             Comment.text = tips[i].Ru.ToString();

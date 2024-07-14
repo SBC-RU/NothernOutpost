@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class GunCircle : MonoBehaviour
 {
@@ -11,6 +12,11 @@ public class GunCircle : MonoBehaviour
     public GameObject slot1Image;
     public GameObject slot2Image;
     public GameObject slot3Image;
+    
+    //количество патронов
+    public TextMeshProUGUI Scorebp9_ostText;
+    public TextMeshProUGUI Scorebp5_ostText;
+    public TextMeshProUGUI Scorebp12_ostText;
 
     public static int armor;
 
@@ -57,9 +63,14 @@ public class GunCircle : MonoBehaviour
     public void Pause()
     {
         circleImage.SetActive(true);
-        Time.timeScale = 0.25f;
+        Time.timeScale = 0.6f;
         GameIsPaused = true;
 
+
+        //вывод количества патронов
+        Scorebp12_ostText.text = Backpack.bp12_ost.ToString();
+        Scorebp5_ostText.text = Backpack.bp5_ost.ToString();
+        Scorebp9_ostText.text = Backpack.bp9_ost.ToString();
 
     }
 }
