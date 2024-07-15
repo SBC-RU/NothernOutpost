@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BP9 : MonoBehaviour, Interactable
+public class BP5 : MonoBehaviour, Interactable
 {
     public Sprite icons; //слот для картинки
 
@@ -20,7 +20,7 @@ public class BP9 : MonoBehaviour, Interactable
     {
         if (isOn)
         {
-            return "<color=yellow>Патроны 9x19 [E]</color>";
+            return "<color=yellow>Патроны 5x45 [E]</color>";
 
         }
         return null;
@@ -38,23 +38,23 @@ public class BP9 : MonoBehaviour, Interactable
     }
     public void Interact() //профит от использования (и судьба объекта)
     {
-        int count = Random.Range(1, 16);
-        if (((count + Backpack.bp9_ost) <= BasicConst.bp9_maxsize) && (!full_pack))
+        int count = Random.Range(8, 31);
+        if (((count + Backpack.bp5_ost) <= BasicConst.bp5_maxsize) && (!full_pack))
         {
-            Backpack.bp9_ost += count;
+            Backpack.bp5_ost += count;
             Destroy(gameObject);
             Debug.Log("+");
             Debug.Log($"{count}");
-            Debug.Log($"{Backpack.bp9_ost}");
+            Debug.Log($"{Backpack.bp5_ost}");
         }
 
         else
         {
-            Backpack.bp9_ost = BasicConst.bp9_maxsize;
+            Backpack.bp5_ost = BasicConst.bp5_maxsize;
             Destroy(gameObject);
             Debug.Log("FULL");
             Debug.Log($"{count}");
-            Debug.Log($"{Backpack.bp9_ost}");
+            Debug.Log($"{Backpack.bp5_ost}");
 
         }
 
