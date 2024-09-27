@@ -7,7 +7,7 @@ using TMPro;
 public class PlayerInteraction : MonoBehaviour
 {
     public Camera mainCam;
-    public float interactionDistance = 0.1f; //расстояние до объекта
+    public float interactionDistance = 10f; //расстояние до объекта
 
     public GameObject interactionUI;
     public TextMeshProUGUI interactionText;
