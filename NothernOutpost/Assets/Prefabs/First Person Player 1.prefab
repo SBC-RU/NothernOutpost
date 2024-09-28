@@ -9539,9 +9539,21 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 29f9e836ba6a0b145ba4159023bed009, type: 2}
   - {fileID: 11400000, guid: e8ccee8d4dd9b044090f82915ef3a7d2, type: 2}
   - {fileID: 11400000, guid: 4dd09cedad7283f429f20834b8fb9c41, type: 2}
+  CategoryObj:
+  - {fileID: 11400000, guid: ea02698ede7abf7488d92c843184f8e8, type: 2}
+  - {fileID: 11400000, guid: 29cebf87a3e83ab4fb25671050267aeb, type: 2}
+  - {fileID: 11400000, guid: 068e33a57c50b2647884763e20974d5d, type: 2}
+  - {fileID: 11400000, guid: 068e33a57c50b2647884763e20974d5d, type: 2}
+  - {fileID: 11400000, guid: 068e33a57c50b2647884763e20974d5d, type: 2}
+  CharacteristicObj:
+  - {fileID: 11400000, guid: 5d35c04363ab96a439c2469ae4766128, type: 2}
+  - {fileID: 11400000, guid: 1c4a21bf6e8b67b42aebd7435d8ed667, type: 2}
+  - {fileID: 11400000, guid: d499b80b718a0ee4cb15f896fafb2150, type: 2}
+  - {fileID: 11400000, guid: 69959b08d6165a84c9d546d08dea3a10, type: 2}
+  - {fileID: 11400000, guid: 4f4d806672f5f8a47946131b819c009f, type: 2}
   Name: {fileID: 7949134182709239245}
-  Category: {fileID: 0}
-  Characteristic: {fileID: 0}
+  Category: {fileID: 4208308059325851478}
+  Characteristic: {fileID: 8660058655322191266}
 --- !u!1 &8700948528923245620
 GameObject:
   m_ObjectHideFlags: 0

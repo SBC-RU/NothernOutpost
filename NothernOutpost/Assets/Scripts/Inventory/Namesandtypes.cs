@@ -8,6 +8,8 @@ public class Namesandtypes : MonoBehaviour
 {
     public int id;
     public Names[] NameObj;
+    public Categoryes[] CategoryObj;
+    public Characteristics[] CharacteristicObj;
     [SerializeField] TextMeshProUGUI Name;
     [SerializeField] TextMeshProUGUI Category;
     [SerializeField] TextMeshProUGUI Characteristic;
@@ -45,6 +47,8 @@ public class Namesandtypes : MonoBehaviour
         if (Name)
         {
             Name.text = NameObj[id].Eng.ToString();
+            Category.text = CategoryObj[id].Eng.ToString();
+            Characteristic.text = CharacteristicObj[id].Eng.ToString();
         }
         else
         {
