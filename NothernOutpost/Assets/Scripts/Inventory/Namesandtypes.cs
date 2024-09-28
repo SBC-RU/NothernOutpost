@@ -6,7 +6,7 @@ using TMPro;
 
 public class Namesandtypes : MonoBehaviour
 {
-    public int id;
+    public static int id;
     public Names[] NameObj;
     public Categoryes[] CategoryObj;
     public Characteristics[] CharacteristicObj;
